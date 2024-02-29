@@ -1,0 +1,38 @@
+{% extends 'student/master.html' %}
+{% block title %}
+     Records
+{% endblock %}
+
+{% block body %}
+<h1 style="text-align: center;" class="display-4">Student Details</h1>
+<table class="table">
+     <thead class="thead-dark">
+       <tr>
+         <th scope="col">ID</th>
+         <th scope="col">Name</th>
+         <th scope="col">Mobile</th>
+         <th scope="col">City</th>
+         <th scope="col">College</th>
+         <th scope="col">Degree</th>
+         <th scope="col">Year</th>
+         <th scope="col">Course</th>
+       </tr>
+     </thead>
+     <tbody>
+          {% for student in data %}
+       <tr>
+         <th>{{student.stu_id}}</th>
+         <td><a href="/update/{{student.stu_id}}">{{student.name}}</a></td>
+         <td>{{student.mob}}</td>
+         <td>{{student.city}}</td>
+         <td>{{student.college}}</td>
+         <td>{{student.degree}}</td>
+         <td>{{student.year}}</td>
+         <td>{{student.course}}</td>
+       </tr>
+       {% endfor %}
+     </tbody>
+   </table>
+   
+   
+{% endblock %}

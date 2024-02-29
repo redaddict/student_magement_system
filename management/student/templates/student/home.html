@@ -1,0 +1,135 @@
+{% extends 'student/master.html' %} 
+{% block title %}
+     Home
+{% endblock %}
+{% load static %}
+
+
+{% block body %}
+
+<marquee behavior="" direction=""><h1><span id="d1">T</span>he<span id="d1">k</span>iran<span id="d1">A</span>cademy</h1></marquee>
+  <div style="height: 600px; width:100%; background-image:url(https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-01.jpg);background-repeat:no-repeat;background-size:cover">
+    <div style="height: 600px; width:50%; float:left;">
+      <h1 style="text-align: center; margin-top:50px;"><span id="d1">T</span>he<span id="d1">k</span>iran<span id="d1">A</span>cademy</h1>
+      <h3 style="text-align: center; margin-top:20px;">Top rated IT Training Classes in Pune</h3>
+      <h4 style="text-align: center; margin-top:20px;">Java, Selenium, Python, AWS, Azure, Salesforce Courses with 100% Job Placement Support</h4>
+      <h5 style="color:white;text-align: center; margin-top:20px;">Looking to become a Software Engineer, Programmer, Tester, IT Consultant in Leading Software MNC's ?</h5>
+      <center><button type="button" class="btn btn-success" style="margin-top: 30px;"><a href="/registration/" style="text-decoration:none; color:white;">Registration</a></button></center>
+    </div>
+    <div style="height: 600px; width:50%; float:left;">
+      <div style="height: 600px; width:50%;float:left;background-color:black;">
+        <img src="{% static 'image/p1.jpg' %}" alt="" height="300px" width="100%">
+        <img src="{% static 'image/p2.jpg' %}" alt="" height="300px" width="100%">
+      </div>
+      <div style="height: 600px; width:50%;float:left;background-color:black;">
+        <img src="{% static 'image/p3.webp' %}" alt="" height="300px" width="100%">
+        <img src="{% static 'image/p4.jpg' %}" alt="" height="300px" width="100%">
+      </div>
+    </div>
+    <!-- <section class="portfolio section-padding" > -->
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5" style="margin-top:90px;">
+              <h2>Our Courses</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur<br>
+              adipisicing elit. Non, quo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4" >
+              <div class="card text-center "style=" box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);">
+                <div class="card-body text-dark">
+                  <div class="img-area mb-4"><img alt="" class="img-fluid" src="{% static 'image/python.png' %}" height="300px" style=" height: 150px;width: 220px;"></div>
+                  <h3 class="card-title">Python Course</h3>
+                  <p class="lead" align="justify">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.Python is easy to learn programming language.</p>
+                  <button class="btn bg-warning text-dark"><a href="/python/" style="text-decoration:none; color:black;">Learn More</a></button> 
+                  <button class="btn bg-warning text-dark"><a href="/registration/" style="text-decoration:none; color:black;">Register Now</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4" >
+                <div class="card text-center"style=" box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4"><img alt="" class="img-fluid" src="{% static 'image/java.svg' %}" height="300px" style=" height: 150px; width: 400px;"></div>
+                    <h3 class="card-title">Java Full Stack Course</h3>
+                    <p class="lead"align="justify">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile.</p>
+                    <button class="btn bg-warning text-dark"><a href="/java/" style="text-decoration:none; color:black;">Learn More</a></button>
+                    <button class="btn bg-warning text-dark"><a href="/registration/" style="text-decoration:none; color:black;">Register Now</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-center" style=" box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4"><img alt="" class="img-fluid" src="{% static 'image/aws1.webp' %}" height="300px" style=" height: 150px;width: 202px;"></div>
+                    <h3 class="card-title">AWS Course</h3>
+                    <p class="lead"align="justify">Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.Amazon Web Services is the worlds most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.</p>
+                    <button class="btn bg-warning text-dark"><a href="/aws/" style="text-decoration:none; color:black;">Learn More</a></button> 
+                    <button class="btn bg-warning text-dark"><a href="/registration/" style="text-decoration:none; color:black;">Register Now</a></button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+       </div> 
+    <!-- <div class="card-group" style="float: inline-start; margin-top:100px;" >
+          <div class="card" style="border-radius: 8%; margin-left:12px; margin-right:15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="card-img-top" src="{% static 'image/python.png' %}" alt="Card image cap" height="300px" style="width: 400px;
+            margin-left: 15px;">
+            <div class="card-body">
+              <h5 class="card-title">Python Programming Language</h5>
+              <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.It is often described as a "batteries included" language due to its comprehensive standard library. Guido van Rossum began working on Python in the late 1980s,first released it in 1991 as Python 0.9.0</p>
+              <center><button type="button" class="btn btn-success">Registration for Python demo</button>
+              <button type="button" class="btn btn-success">Learn more</button></center>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card" style="border-radius: 8%; margin-left:12px; margin-right:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="card-img-top" src="{% static 'image/java.svg' %}" alt="Card image cap" height="300px" style="width: 477px;">
+            <div class="card-body">
+              <h5 class="card-title">Java Programming Language</h5>
+              <p class="card-text" style="text-align: left;">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.</p>
+              <center><button type="button" class="btn btn-success">Registration for Java demo</button>
+                <button type="button" class="btn btn-success">Learn more</button></center>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card" style="border-radius: 8%; margin-left:12px; margin-right:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="card-img-top" src="{% static 'image/aws1.webp' %}" alt="Card image cap" height="300px" >
+            <div class="card-body">
+              <h5 class="card-title">Amazon Web Services</h5>
+              <p class="card-text">Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT </p>
+              <center><button type="button" class="btn btn-success">Registration for AWS demo</button>
+                <button type="button" class="btn btn-success">Learn more</button></center>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div> -->
+      
+    <!-- <footer class="bg-dark p-2 text-center">
+      <div class="container">
+        <p class="text-white">All Right Reserved By @website Name</p>
+      </div>
+    </footer>  
+       -->
+    
+       <br><br><br>
+       <div class="footer" style="background:black;
+       width: 100%;
+       min-height: 5%;
+       
+       position: absolute;
+       margin: 30px 0 0 -32px;
+       padding: 10px;
+       color: white;
+       font-weight: bold;
+       text-align:center;
+       font-family: 'Times New Roman', Times, serif;">
+        <p>All Right Reserved By @website Name</p>
+      </div>   
+      
+
+  </div>
+{% endblock %}

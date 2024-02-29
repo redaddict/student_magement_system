@@ -1,0 +1,40 @@
+{% extends 'student/master.html' %}
+{% block title %}
+     Update
+{% endblock %}
+
+{% block body %}
+
+<div style="margin-left:500px; height: 700px; width:300px ;background-color:yellowgreen">
+   <div style="text-align:center; height: 50px; width:300px ;background-color:red">
+        <h3 style="color: white;">Registration Form</h3><br><br>
+        
+        <form method="post">
+          {% csrf_token%}
+          <center>
+               <h4>Student_id</h4> 
+               <input type="number" name="st_id" value="{{data.stu_id}}">
+               <h4>Name</h4> 
+               <input type="text" name="name" value="{{data.name}}">
+               <h4>Mobile_No</h4> 
+               <input type="number" name="mbl" value="{{data.mob}}">
+               <h4>City</h4> <input type="text" name="city" value="{{data.city}}"> 
+               <h4>College</h4> <input type="text" name="college" value="{{data.college}}">
+               <h4>Degree</h4> <input type="text" name="degree" value="{{data.degree}}">
+               <h4>Passing Year</h4> <input type="number" name="year" value="{{data.year}}">
+               <h4>Course</h4>
+               <select name="course" id="" value="{{data.course}}">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="aws">AWS</option>
+               </select><br><br>
+               <button type="submit">Update</button>
+               <button type="button"><a href="/delete/{{data.stu_id}}">Delete</a></button>
+          </center>
+        </form>
+   </div>
+   <div></div>
+
+</div>
+
+{% endblock %}
