@@ -1,4 +1,4 @@
-# student_magement_system
+# student_management_system
 
 The Student Management System (SMS) you've developed using Django, Python, and SQLite is a comprehensive application designed to streamline various processes involved in managing student data within an educational institution. Here's a detailed description of your project:
 
